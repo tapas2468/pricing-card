@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <p>Simplified</p>
+            <h2>Flexible Pricing</h2>
+            <p>Choose the plan that fits your business needs</p>
+        </header>
+
+        <section>
+            <div class="card" data-th-each="card : ${cards}">
+                <div class="card-heading">
+                    <h4 data-th-text="${card.title}"></h4>
+                    <p data-th-text="${card.subTitle}"></p>
+                </div>
+
+                <hr />
+
+                <div class="card-body">
+                    <h2 data-th-text="|$${card.Price}/mo|"></h2>
+                    <button>Get Started</button>
+                </div>
+
+                <hr />
+
+                <div class="features">
+                    <div class="feature" data-th-each="feature:${card.features}">
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                        <p data-th-text="${feature}"></p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:wght@100&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color-scheme: dark white;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+
+}
+
+section {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.card {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    display: grid;
+    gap: 1rem;
+}
+
+
+.card-heading,
+.card-body,
+.features {
+    display: grid;
+    gap: 1rem;
+}
+
+button {
+    padding-block: 0.3rem;
+    cursor: pointer;
+}
+
+.feature {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
